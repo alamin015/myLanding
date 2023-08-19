@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply py-2 sm:px-6 w-full rounded-[35px] bg-transparent text-base border-menuColor transition-all border text-menuColor hover:bg-menuColor hover:underline hover:text-black;
+  }
+  .activeBtn-primary {
+    @apply py-2 sm:px-6 w-full rounded-[35px] bg-transparent text-base border-primary transition-all border text-primary hover:bg-primary hover:border-primary hover:underline hover:text-menuColor;
+  }
+  .btn-secondary {
+    @apply py-2 sm:px-6 w-full sm:w-auto rounded-[35px] bg-[#20478C] text-base border-[#20478C] transition-all border text-menuColor hover:bg-transparent hover:border-menuColor;
+  }
+  .btn-secondary-outline {
+    @apply py-2 sm:px-6 w-full sm:w-auto rounded-[35px] bg-transparent text-base border-menuColor transition-all border text-menuColor hover:bg-[#20478C] hover:border-[#20478C];
+  }
+  .btn-property {
+    @apply py-2 sm:px-6 w-full sm:w-auto rounded-[35px] bg-transparent text-base border-[#20478C] transition-all border text-[#20478C] hover:bg-[#20478C] hover:text-menuColor;
+  }
+  .btn-mobile {
+    @apply py-2 sm:px-6 w-full sm:w-auto rounded-[35px] bg-[#20478C] text-base border-[#20478C] transition-all border text-menuColor hover:bg-transparent hover:text-[#20478C];
+  }
+}

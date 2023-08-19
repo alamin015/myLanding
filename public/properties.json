@@ -1,0 +1,92 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/0qqfxxR/properties1.png",
+      "location": "1/79 Knox Street, Belmore NSW 2192",
+      "title": "The Lakemba Penthouse",
+      "state": "Sell",
+      "facilities":
+        {
+          "room": 4,
+          "car": 2,
+          "pool": 2,
+          "extra":"Other"
+        }
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/f9TXfT7/properties2.png",
+      "location": "Address upon request",
+      "title": "Wiley Park",
+      "state": "Sell",
+      "facilities":
+      {
+        "room": 4,
+        "car": 2,
+        "pool": 2,
+        "extra":"Other"
+      }
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/F8rFnrv/properties3.png",
+      "location": "Address upon request",
+      "title": "Rockdale, NSW 2216",
+      "state": "Sell",
+      "facilities":
+      {
+        "room": 4,
+        "car": 2,
+        "pool": 2,
+        "extra":"Other"
+      }
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/99yxKWJ/properties4.png",
+      "location": "26/548 Liverpool Road, Strathfield South NSW 2136",
+      "title": "Price Withheld",
+      "state": "Sold",
+      "facilities":
+      {
+        "room": 4,
+        "car": 2,
+        "pool": 2,
+        "extra":"Unit"
+      }
+    },
+    {
+      "id": 5,
+      "img": "https://i.ibb.co/4MCVTMH/properties5.png",
+      "location": "11/246 - 248 LAKEMBA STREET, LAKEMBA",
+      "title": "Price Withheld",
+      "state": "Sold",
+      "facilities":
+      {
+        "room": 4,
+        "car": 2,
+        "pool": 2,
+        "extra":"Unit"
+      }
+    },
+    {
+      "id": 6,
+      "img": "https://i.ibb.co/d0m78zQ/properties6.png",
+      "location": "4/365 Hume Highway, Bankstown NSW 2200",
+      "title": "Price Withheld",
+      "state": "Sold",
+      "facilities":
+      {
+        "room": 4,
+        "car": 2,
+        "pool": 2,
+        "extra":"Unit"
+      }
+    }
+  ]
+
+ 
+
+
+
+
