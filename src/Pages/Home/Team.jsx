@@ -20,7 +20,7 @@ const Team = () => {
     dots: true,
     className: 'center',
     centerMode: true,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 4000,
     cssEase: 'linear',
     infinite: true,

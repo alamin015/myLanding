@@ -139,6 +139,7 @@ const Header = () => {
                   return (
                     <li key={Math.random()} className='mt-8'>
                       <a
+                        onClick={handleMobileMenu}
                         href={item.link}
                         className='text-2xl hover:text-primary text-[#050B15]'
                       >

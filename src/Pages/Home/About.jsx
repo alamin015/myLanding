@@ -41,7 +41,7 @@ const About = () => {
                   professionalism and market leading innovation
                 </p>
               </div>
-              <div className='flex items-start justify-between gap-2'>
+              <div className='flex items-start justify-between gap-10 sm:gap-2'>
                 <div>
                   <h3 className='uppercase mb-8 text-headingBlack text-xl'>
                     SPECIALITIES

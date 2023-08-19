@@ -47,6 +47,23 @@ html {
     margin: 0 -120px;
   }
 }
+@media only screen and (max-width: 418px) {
+  .slick-slide > div {
+    margin: 0 50px 40px;
+  }
+  .slick-list {
+    margin: 0 -50px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .slick-slide > div {
+    margin: 0 60px 40px;
+  }
+  .slick-list {
+    margin: 0 -60px;
+  }
+}
+
 .slick-dots li button::before {
   font-size: 12px;
   color: #20478c;
