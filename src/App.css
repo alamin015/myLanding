@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&display=swap');
 .root {
   max-width: 1240px;
+  width: 100%;
   margin: 0 auto;
+}
+* {
+  box-sizing: border-box;
 }
 body,
 html {

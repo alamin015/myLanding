@@ -4,6 +4,7 @@ import logoBlack from '../../../assets/logo/black.png';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import { FaBarsStaggered } from 'react-icons/fa6';
 import { FaTimes } from 'react-icons/fa';
+import ReactWhatsapp from 'react-whatsapp';
 
 const Header = () => {
   const [headerActive, setHeaderActive] = useState(false);
@@ -84,18 +85,20 @@ const Header = () => {
               >
                 Contact us
               </button>
-              <button
-                className={`${
-                  headerActive ? 'activeBtn-primary' : 'btn-primary'
-                } flex items-center gap-1`}
-              >
-                <IoLogoWhatsapp
-                  size={24}
-                  height={24}
-                  className='text-[#4fce5d]'
-                />
-                WhatsApp
-              </button>
+              <ReactWhatsapp number='+8801827124592'>
+                <span
+                  className={`${
+                    headerActive ? 'activeBtn-primary' : 'btn-primary'
+                  } flex items-center gap-1`}
+                >
+                  <IoLogoWhatsapp
+                    size={24}
+                    height={24}
+                    className='text-[#4fce5d]'
+                  />
+                  WhatsApp
+                </span>
+              </ReactWhatsapp>
             </div>
           </div>
           {/* mobile menu  */}
@@ -118,9 +121,9 @@ const Header = () => {
           </div>
           {/* respnonsive header  */}
           <div
-            className={`absolute left-0 top-[96px] transition-all z-[999] ${
+            className={`absolute left-0 top-[85px] transition-all z-[999] ${
               mobileHeader
-                ? 'h-[70vh] visible opacity-100'
+                ? 'h-[80vh] visible opacity-100'
                 : 'h-0 invisible opacity-0'
             } bg-white w-full`}
           >
@@ -141,6 +144,18 @@ const Header = () => {
               </ul>
               <div className='mt-8'>
                 <button className='btn-mobile'>Contact us</button>
+                <ReactWhatsapp number='+8801827124592' className='w-full block'>
+                  <span
+                    className={`btn-mobile flex items-center justify-center mt-4 gap-1`}
+                  >
+                    <IoLogoWhatsapp
+                      size={24}
+                      height={24}
+                      className='text-[#4fce5d]'
+                    />
+                    WhatsApp
+                  </span>
+                </ReactWhatsapp>
               </div>
             </div>
           </div>

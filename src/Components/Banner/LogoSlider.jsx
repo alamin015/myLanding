@@ -14,11 +14,11 @@ const LogoSlider = () => {
       </h3>
       <Marquee autoFill pauseOnHover speed={30}>
         <div className='flex items-center gap-5'>
-          <img src={img1} alt='img1' className='w-[178px] h-[69px] mx-4' />
-          <img src={img2} alt='img2' className='w-[152px] h-[105px] mx-4' />
-          <img src={img3} alt='img3' className='w-[99px] h-[99px] mx-4' />
-          <img src={img4} alt='img4' className='w-[99px] h-[99px] mx-4' />
-          <img src={img5} alt='img5' className='w-[185px] h-[37px] mx-4' />
+          <img src={img1} alt='img1' className='w-[178px] h-[69px]' />
+          <img src={img2} alt='img2' className='w-[152px] h-[105px]' />
+          <img src={img3} alt='img3' className='w-[99px] h-[99px]' />
+          <img src={img4} alt='img4' className='w-[99px] h-[99px]' />
+          <img src={img5} alt='img5' className='w-[185px] h-[37px] mr-3' />
         </div>
       </Marquee>
     </div>

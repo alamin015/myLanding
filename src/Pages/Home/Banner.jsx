@@ -23,7 +23,9 @@ const Banner = () => {
                 </button>
                 <button className='btn-secondary-outline'>About us</button>
               </div>
-              <LogoSlider />
+              <div className='w-[90%] mx-auto'>
+                <LogoSlider />
+              </div>
             </div>
           </div>
         </div>
