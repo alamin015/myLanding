@@ -1,7 +1,11 @@
 import React from 'react';
 import logo from '../../../assets/logo/white.png';
+import useEmail from '../../../hooks/useEmail';
 
 const Footer = () => {
+  const handleEmail = () => {
+    useEmail();
+  };
   const quickLinks = [
     {
       link: '#home',
@@ -100,7 +104,9 @@ const Footer = () => {
                 </p>
               </div>
               <div>
-                <button className='btn-primary'>Contact us</button>
+                <button className='btn-primary' onClick={handleEmail}>
+                  Contact us
+                </button>
               </div>
             </div>
           </div>

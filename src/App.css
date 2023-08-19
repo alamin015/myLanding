@@ -33,10 +33,19 @@ html {
 }
 
 .slick-slide > div {
-  margin: 0 10px 40px;
+  margin: 0 30px 40px;
 }
 .slick-list {
-  margin: 0 -10px;
+  margin: 0 -30px;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 571px) {
+  .slick-slide > div {
+    margin: 0 120px 40px;
+  }
+  .slick-list {
+    margin: 0 -120px;
+  }
 }
 .slick-dots li button::before {
   font-size: 12px;

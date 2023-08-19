@@ -5,13 +5,18 @@ import { IoLogoWhatsapp } from 'react-icons/io';
 import { FaBarsStaggered } from 'react-icons/fa6';
 import { FaTimes } from 'react-icons/fa';
 import ReactWhatsapp from 'react-whatsapp';
+import useEmail from '../../../hooks/useEmail';
 
 const Header = () => {
   const [headerActive, setHeaderActive] = useState(false);
   const [mobileHeader, setMobileHeader] = useState(false);
+  const handleEmail = () => {
+    useEmail();
+  };
   const handleMobileMenu = () => {
     setMobileHeader(!mobileHeader);
   };
+
   const menu = [
     {
       link: '#home',
@@ -79,13 +84,14 @@ const Header = () => {
             {/* header btn  */}
             <div className='flex items-center gap-8'>
               <button
+                onClick={handleEmail}
                 className={`${
                   headerActive ? 'activeBtn-primary' : 'btn-primary'
                 }`}
               >
                 Contact us
               </button>
-              <ReactWhatsapp number='+8801827124592'>
+              <ReactWhatsapp number='+61411891061'>
                 <span
                   className={`${
                     headerActive ? 'activeBtn-primary' : 'btn-primary'
@@ -143,9 +149,14 @@ const Header = () => {
                 })}
               </ul>
               <div className='mt-8'>
-                <button className='btn-mobile'>Contact us</button>
-                <ReactWhatsapp number='+8801827124592' className='w-full block'>
-                  <span
+                <button className='btn-mobile' onClick={handleEmail}>
+                  Contact us
+                </button>
+                <ReactWhatsapp
+                  number='+61411891061'
+                  className='w-full sm:flex sm:items-center sm:justify-center'
+                >
+                  <p
                     className={`btn-mobile flex items-center justify-center mt-4 gap-1`}
                   >
                     <IoLogoWhatsapp
@@ -154,7 +165,7 @@ const Header = () => {
                       className='text-[#4fce5d]'
                     />
                     WhatsApp
-                  </span>
+                  </p>
                 </ReactWhatsapp>
               </div>
             </div>

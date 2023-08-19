@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import { SocialIcon } from 'react-social-icons';
 import Inststa from '../../lib/instagram/Inststa';
+import useEmail from '../../hooks/useEmail';
 
 const Team = () => {
   const [member, setMember] = useState([]);
@@ -11,11 +12,15 @@ const Team = () => {
       .then((result) => setMember(result));
   }, []);
 
+  const handleEmail = () => {
+    useEmail();
+  };
+
   const settings = {
     dots: true,
     className: 'center',
     centerMode: true,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 4000,
     cssEase: 'linear',
     infinite: true,
@@ -24,7 +29,7 @@ const Team = () => {
     speed: 500,
     responsive: [
       {
-        breakpoint: 991,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -69,12 +74,15 @@ const Team = () => {
               {member.length &&
                 member.map((item) => {
                   return (
-                    <div className='mx-4' key={item.id}>
-                      <div className='p-5 rounded-[20px] text-center border border-[#DADADC] bg-[#F7F9FD]'>
+                    <div
+                      className='mx-4 lg:h-[450px] h-[350px] min-w-[301px]'
+                      key={item.id}
+                    >
+                      <div className='p-5 h-full w-full rounded-[20px] text-center border border-[#DADADC] bg-[#F7F9FD]'>
                         <div className='mb-8'>
                           <img
                             src={item.img}
-                            className='lg:w-[254px] lg:h-[254px] w-[160px] h-[160px] rounded-full mx-auto'
+                            className='lg:w-[254px] object-cover lg:h-[254px] w-[160px] h-[160px] rounded-full mx-auto'
                             alt=''
                           />
                         </div>
@@ -85,15 +93,19 @@ const Team = () => {
                           {item.role}
                         </h4>
                         <div className='flex items-center text-center justify-center gap-7'>
-                          <SocialIcon
-                            target='_blank'
-                            url={item.fb}
-                            className='rounded-full'
-                            style={{ width: '32px', height: '32px' }}
-                          />
-                          <a href={item.insta} target='_blank'>
-                            <Inststa className='w-[52px]' />
-                          </a>
+                          {item.fb && (
+                            <SocialIcon
+                              target='_blank'
+                              url={item.fb}
+                              className='rounded-full'
+                              style={{ width: '32px', height: '32px' }}
+                            />
+                          )}
+                          {item.insta && (
+                            <a href={item.insta} target='_blank'>
+                              <Inststa className='w-[52px]' />
+                            </a>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -102,7 +114,9 @@ const Team = () => {
             </Slider>
           </div>
           <div className='text-center mt-[60px]'>
-            <button className='btn-property text-base'>Contact us</button>
+            <button className='btn-property text-base' onClick={handleEmail}>
+              Contact us
+            </button>
           </div>
         </div>
       </div>

@@ -3,8 +3,12 @@ import image from '../../assets/about/about.png';
 import auctioneer from '../../assets/smallLogo/auctioneer.png';
 import men from '../../assets/smallLogo/men.png';
 import trophy from '../../assets/smallLogo/trophy.png';
+import useEmail from '../../hooks/useEmail';
 
 const About = () => {
+  const handleEmail = () => {
+    useEmail();
+  };
   return (
     <div className='py-[60px]' id='about_us'>
       <div className='root'>
@@ -14,8 +18,8 @@ const About = () => {
               <h3 className='md:text-5xl text-3xl font-bold text-headingBlack'>
                 About Us
               </h3>
-              <p className='text-xl text-[#050B15] uppercase md:my-8 my-7'>
-                Inspire devotion dedication, and Drive
+              <p className='sm:text-xl text-lg text-[#050B15] uppercase md:my-8 my-7'>
+                Inspire devotion dedication Drive
               </p>
               <div className='text-[#373B44]'>
                 <p className='text-[#373B44] text-lg md:mb-5 mb-6'>
@@ -66,7 +70,12 @@ const About = () => {
                 </div>
               </div>
               <div className='md:mt-[40px] mt-7'>
-                <button className='btn-property text-base'>Contact us</button>
+                <button
+                  className='btn-property text-base'
+                  onClick={handleEmail}
+                >
+                  Contact us
+                </button>
               </div>
             </div>
             <div className='lg:w-1/2 lg:grow-1 mt-8 lg:mt-0'>

@@ -8,7 +8,7 @@ import { FaSwimmingPool } from 'react-icons/fa';
 const Property = ({ data }) => {
   const { img, title, state, location, facilities } = data;
   return (
-    <div className='bg-white shrink-0 hover:shadow-xl rounded-[10px] p-5 border border-[#DADADC]'>
+    <div className='bg-white min-w-[301px] hover:shadow-xl rounded-[10px] p-5 border border-[#DADADC]'>
       <div className='relative rounded-[10px] overflow-hidden'>
         <LazyLoad height={191} threshold={0.5}>
           <img
