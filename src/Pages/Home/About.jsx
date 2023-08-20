@@ -13,7 +13,7 @@ const About = () => {
     <div className='py-[60px]' id='about_us'>
       <div className='root'>
         <div className='container'>
-          <div className='lg:flex lg:items-start lg:justify-between gap-8'>
+          <div className='lg:flex lg:items-start lg:justify-between gap-12'>
             <div className='text-left lg:w-1/2'>
               <h3 className='md:text-5xl text-3xl font-bold text-headingBlack'>
                 About Us
@@ -22,7 +22,7 @@ const About = () => {
                 Inspire devotion dedication Drive
               </p>
               <div className='text-[#373B44]'>
-                <p className='text-[#373B44] text-lg md:mb-5 mb-6'>
+                <p className='text-[#373B44] text-justify text-lg md:mb-5 mb-6'>
                   Direct in their approach and dedicated to providing a quality
                   of service that is precise Korhani & Alice Property Group are
                   highly connected and leverages their loyal network in favor of
@@ -30,7 +30,7 @@ const About = () => {
                   value quality service and a prompt reply it's about being the
                   first to respond at every opportunity.
                 </p>
-                <p className='text-[#373B44] text-lg mb-8'>
+                <p className='text-[#373B44] text-justify text-lg mb-8'>
                   Constantly pushing the expectation for service, the team leads
                   by example. A consistently high achieving Real Estate company
                   and dedicated enthusiasts, the team at K&A-PG combine their
@@ -70,12 +70,9 @@ const About = () => {
                 </div>
               </div>
               <div className='md:mt-[40px] mt-7'>
-                <button
-                  className='btn-property text-base'
-                  onClick={handleEmail}
-                >
+                <a href='tel:+61411891061' className='btn-about text-base'>
                   Contact us
-                </button>
+                </a>
               </div>
             </div>
             <div className='lg:w-1/2 lg:grow-1 mt-8 lg:mt-0'>

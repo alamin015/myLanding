@@ -8,7 +8,7 @@ import img5 from '../../assets/trusted-logo/t5.png';
 
 const LogoSlider = () => {
   return (
-    <div className='sm:mt-[120px] mt-[70px]'>
+    <div className='mt-[60px]'>
       <h3 className='text-3xl text-menuColor text-left mb-5'>
         Our trusted partners
       </h3>

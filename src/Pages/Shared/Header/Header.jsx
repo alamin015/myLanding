@@ -83,14 +83,6 @@ const Header = () => {
             </ul>
             {/* header btn  */}
             <div className='flex items-center gap-8'>
-              <button
-                onClick={handleEmail}
-                className={`${
-                  headerActive ? 'activeBtn-primary' : 'btn-primary'
-                }`}
-              >
-                Contact us
-              </button>
               <ReactWhatsapp number='+61411891061'>
                 <span
                   className={`${
@@ -150,9 +142,10 @@ const Header = () => {
                 })}
               </ul>
               <div className='mt-8'>
-                <button className='btn-mobile' onClick={handleEmail}>
+                <a href='tel:+61411891061' className='btn-mobile inline-block'>
                   Contact us
-                </button>
+                </a>
+
                 <ReactWhatsapp
                   number='+61411891061'
                   className='w-full sm:flex sm:items-center sm:justify-center'

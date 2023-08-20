@@ -8,6 +8,7 @@ const Properties = () => {
       .then((res) => res.json())
       .then((data) => setProperties(data));
   }, []);
+
   return (
     <div className='' id='our_properties'>
       <div className='root'>

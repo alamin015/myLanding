@@ -3,7 +3,7 @@ import LazyLoad from 'react-lazy-load';
 import { CiLocationOn } from 'react-icons/ci';
 import { LiaBedSolid } from 'react-icons/lia';
 import { AiOutlineCar } from 'react-icons/ai';
-import { FaSwimmingPool } from 'react-icons/fa';
+import { BiBath } from 'react-icons/bi';
 
 const Property = ({ data }) => {
   const { img, title, state, location, facilities } = data;
@@ -36,7 +36,7 @@ const Property = ({ data }) => {
           {facilities.room}
         </span>
         <span className='flex items-center gap-2 text-lg text-[#696C72]'>
-          <FaSwimmingPool size={16} />
+          <BiBath size={16} />
           {facilities.pool}
         </span>
         <span className='flex items-center gap-2 text-lg text-[#696C72]'>
