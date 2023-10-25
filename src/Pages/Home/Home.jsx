@@ -1,8 +1,8 @@
-import React from 'react';
-import Banner from './Banner';
-import Properties from './Properties';
-import Team from './Team';
-import About from './About';
+import React from "react";
+import Banner from "./Banner";
+import Properties from "./Properties";
+import Team from "./Team";
+import About from "./About";
 
 const Home = () => {
   return (

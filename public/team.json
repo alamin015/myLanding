@@ -1,39 +1,23 @@
 [
+  {
+    "id": 1,
+    "name": "Yaser Korhani",
+    "img": "https://i.ibb.co/TbBGzzW/Yaser-Korhani.png",
+    "role": "Sales Assistant"
+  },
+  {
+    "id": 2,
+    "name": "Mohammad Korhani",
+    "img": "https://i.ibb.co/jTvYZQc/Korhani.png",
+    "role": "Founder & Owner",
+    "fb": "https://www.facebook.com/mohammed.korhani.3?mibextid=LQQJ4d",
+    "insta": "https://www.instagram.com/mohammed_korhani/?igshid=NTc4MTIwNjQ2YQ%3D%3D"
+  },
 
-    {
-        "id": 1,
-        "name": "Yaser Korhani",
-        "img": "https://i.ibb.co/TbBGzzW/Yaser-Korhani.png",
-        "role": "Sales Assistant"
-    },
-    {
-        "id": 2,
-        "name": "Mohammad Korhani",
-        "img":"https://i.ibb.co/jTvYZQc/Korhani.png",
-        "role": "Founder & Owner",
-        "fb": "https://www.facebook.com/mohammed.korhani.3?mibextid=LQQJ4d",
-        "insta": "https://www.instagram.com/mohammed_korhani/?igshid=NTc4MTIwNjQ2YQ%3D%3D"
-    },
-    {
-        "id":3,
-        "name": "Hamza Abo Roza",
-        "img": "https://i.ibb.co/zmzvtd9/Hamza.png",
-        "role": "Sales Assistant",
-        "fb": "https://www.facebook.com/profile.php?id=100073275793177&mibextid=2JQ9oc",
-        "insta": "https://www.instagram.com/aboroza.18/?igshid=ZGUzMzM3NWJiOQ%3D%3D"
-    },
-    {
-        "id": 4,
-        "name": "Maaz Ahmad",
-        "img": "https://i.ibb.co/nfhsgTW/Maaz.png",
-        "role": "Sales Assistant",
-        "fb": "https://www.facebook.com/h4hum?mibextid=LQQJ4d",
-        "insta": "https://www.instagram.com/_maazahmad__/?igshid=NTc4MTIwNjQ2YQ%3D%3D"
-    },
-    {
-        "id": 5,
-        "name": "Rawia Korhani",
-        "img": "https://i.ibb.co/Fn14RhL/Rawia.png",
-        "role": "Reception"
-    }
+  {
+    "id": 5,
+    "name": "Rawia Korhani",
+    "img": "https://i.ibb.co/Fn14RhL/Rawia.png",
+    "role": "Reception"
+  }
 ]

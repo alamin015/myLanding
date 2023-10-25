@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
-import { SocialIcon } from 'react-social-icons';
-import Inststa from '../../lib/instagram/Inststa';
-import useEmail from '../../hooks/useEmail';
-import 'swiper/css/bundle';
+import React, { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import { SocialIcon } from "react-social-icons";
+import Inststa from "../../lib/instagram/Inststa";
+import useEmail from "../../hooks/useEmail";
+import "swiper/css/bundle";
 
 const Team = () => {
   const [member, setMember] = useState([]);
   useEffect(() => {
-    fetch('team.json')
+    fetch("team.json")
       .then((res) => res.json())
       .then((result) => setMember(result));
   }, []);
@@ -78,7 +78,7 @@ const Team = () => {
                 clickable: true,
               }}
               loop={true}
-              centeredSlides={true}
+              // centeredSlides={true}
               breakpoints={{
                 640: {
                   slidesPerView: 2,
@@ -96,7 +96,7 @@ const Team = () => {
                 member.map((item) => {
                   return (
                     <SwiperSlide key={item.id}>
-                      <div className='lg:h-[450px] h-[350px] min-w-[301px] rounded-[20px] mb-14'>
+                      <div className='lg:h-[450px] h-[350px] min-w-[301px] rounded-[20px] lg:mb-0 mb-14'>
                         <div className='p-5  h-full w-full rounded-[20px] text-center border border-[#DADADC] bg-[#F7F9FD]'>
                           <div className='mb-8'>
                             <img
@@ -117,7 +117,7 @@ const Team = () => {
                                 target='_blank'
                                 url={item.fb}
                                 className='rounded-full'
-                                style={{ width: '32px', height: '32px' }}
+                                style={{ width: "32px", height: "32px" }}
                               />
                             )}
                             {item.insta && (

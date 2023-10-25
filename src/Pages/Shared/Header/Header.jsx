@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import logo from '../../../assets/logo/white.png';
-import logoBlack from '../../../assets/logo/black.png';
-import { IoLogoWhatsapp } from 'react-icons/io';
-import { FaBarsStaggered } from 'react-icons/fa6';
-import { FaTimes } from 'react-icons/fa';
-import ReactWhatsapp from 'react-whatsapp';
-import useEmail from '../../../hooks/useEmail';
+import React, { useState, useEffect } from "react";
+import logo from "../../../assets/logo/white.png";
+import logoBlack from "../../../assets/logo/white2.png";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaBarsStaggered } from "react-icons/fa6";
+import { FaTimes } from "react-icons/fa";
+import ReactWhatsapp from "react-whatsapp";
+import useEmail from "../../../hooks/useEmail";
 
 const Header = () => {
   const [headerActive, setHeaderActive] = useState(false);
@@ -19,25 +19,25 @@ const Header = () => {
 
   const menu = [
     {
-      link: '#home',
-      label: 'Home',
+      link: "#home",
+      label: "Home",
     },
     {
-      link: '#our_properties',
-      label: 'Our properties',
+      link: "#our_properties",
+      label: "Our properties",
     },
     {
-      link: '#about_us',
-      label: 'About us',
+      link: "#team",
+      label: "Team",
     },
     {
-      link: '#team',
-      label: 'Team',
+      link: "#about_us",
+      label: "About us",
     },
   ];
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       if (scrollY > 80) {
         setHeaderActive(true);
       } else {
@@ -48,7 +48,7 @@ const Header = () => {
   return (
     <header
       className={`fixed z-[999999] top-0 transition-all left-0 w-full bg-transparent ${
-        headerActive ? 'shadow-xl bg-white' : 'bg-transparent'
+        headerActive ? "shadow-xl bg-white" : "bg-transparent"
       }`}
     >
       <div className='root'>
@@ -72,8 +72,8 @@ const Header = () => {
                     key={link}
                     className={`text-lg ${
                       headerActive
-                        ? 'text-[#050B15] hover:text-primary'
-                        : 'text-menuColor'
+                        ? "text-[#050B15] hover:text-primary"
+                        : "text-menuColor"
                     }  hover:underline`}
                   >
                     {label}
@@ -86,7 +86,7 @@ const Header = () => {
               <ReactWhatsapp number='+61411891061'>
                 <span
                   className={`${
-                    headerActive ? 'activeBtn-primary' : 'btn-primary'
+                    headerActive ? "activeBtn-primary" : "btn-primary"
                   } flex items-center gap-1`}
                 >
                   <IoLogoWhatsapp
@@ -104,14 +104,14 @@ const Header = () => {
             {!mobileHeader ? (
               <FaBarsStaggered
                 className={`${
-                  headerActive ? 'text-primary' : 'text-menuColor'
+                  headerActive ? "text-primary" : "text-menuColor"
                 } hover:cursor-pointer`}
                 size={30}
               />
             ) : (
               <FaTimes
                 className={`${
-                  headerActive ? 'text-primary' : 'text-menuColor'
+                  headerActive ? "text-primary" : "text-menuColor"
                 } hover:cursor-pointer`}
                 size={30}
               />
@@ -121,8 +121,8 @@ const Header = () => {
           <div
             className={`absolute left-0 top-[85px] transition-all z-[999] ${
               mobileHeader
-                ? 'h-[80vh] visible opacity-100'
-                : 'h-0 invisible opacity-0'
+                ? "h-[80vh] visible opacity-100"
+                : "h-0 invisible opacity-0"
             } bg-white w-full`}
           >
             <div className='text-center container'>

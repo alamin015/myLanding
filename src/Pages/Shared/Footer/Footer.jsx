@@ -1,6 +1,6 @@
-import React from 'react';
-import logo from '../../../assets/logo/white.png';
-import useEmail from '../../../hooks/useEmail';
+import React from "react";
+import logo from "../../../assets/logo/black.png";
+import useEmail from "../../../hooks/useEmail";
 
 const Footer = () => {
   const handleEmail = () => {
@@ -8,34 +8,35 @@ const Footer = () => {
   };
   const quickLinks = [
     {
-      link: '#home',
-      label: 'Home',
+      link: "#home",
+      label: "Home",
     },
     {
-      link: '#our_properties',
-      label: 'Our properties',
+      link: "#our_properties",
+      label: "Our properties",
     },
     {
-      link: '#about_us',
-      label: 'About Us',
+      link: "#about_us",
+      label: "About Us",
     },
   ];
   const supportLinks = [
     {
-      number: '+8801318509643',
-      label: 'Contact us',
+      number: "+8801318509643",
+      label: "Contact us",
     },
     {
-      link: '#privacy',
-      label: 'Privacy Policy',
+      link: "#privacy",
+      label: "Privacy Policy",
     },
     {
-      link: '#condition',
-      label: 'Terms & Coditions',
+      link: "#condition",
+      label: "Terms & Coditions",
     },
   ];
+
   return (
-    <footer className='bg-[#050B15] pt-[60px]'>
+    <footer className='bg-[#090223] pt-[60px]'>
       <div className='root'>
         <div className='container'>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 sm:gap-5'>
@@ -43,7 +44,7 @@ const Footer = () => {
               <img
                 src={logo}
                 alt='logo'
-                className='w-[80px] h-[30px] sm:w-[110px] sm:h-[45px]'
+                className='w-[110px] h-[40px] sm:w-[110px] sm:h-[45px]'
               />
             </div>
             <div className='text-center sm:text-left'>
@@ -65,13 +66,13 @@ const Footer = () => {
             </div>
 
             <div className='text-center sm:text-left'>
-              <h3 className='text-[#FBFCFE] text-xl'>Support</h3>
+              <h3 className='text-[#FBFCFE] text-xl'>SUPPORT</h3>
               <ul>
                 {supportLinks.map((item) => {
                   return (
                     <li key={Math.random()} className='mt-[20px]'>
                       <a
-                        href={item.number ? 'tel:' + item.number : item.link}
+                        href={item.number ? "tel:" + item.number : item.link}
                         className='text-[#D2DAE8] hover:underline text-lg'
                       >
                         {item.label}
@@ -83,12 +84,12 @@ const Footer = () => {
             </div>
 
             <div className='text-center sm:text-left'>
-              <h3 className='text-[#FBFCFE] text-xl'>Head Office</h3>
+              <h3 className='text-[#FBFCFE] text-xl'>HEAD OFFICE</h3>
               <p className='text-[#D2DAE8] text-lg mt-5'>
                 Address: 1/96-98 Columbine Ave,Punchbowl NSW 2196
               </p>
               <p className='text-[#D2DAE8] text-lg mt-5'>
-                Email:{' '}
+                Email:{" "}
                 <span
                   className='hover:underline cursor-pointer'
                   onClick={handleEmail}
@@ -96,7 +97,7 @@ const Footer = () => {
                   Mohammed.korhani@outlook.com.au
                 </span>
               </p>
-              <h3 className='text-[#FBFCFE] text-xl my-5'>Newsletter</h3>
+              <h3 className='text-[#FBFCFE] text-xl my-5'>NEWSLETTER</h3>
               <div className='relative'>
                 <input
                   type='text'
@@ -128,7 +129,7 @@ const Footer = () => {
             </div>
           </div>
           <p className='text-center text-[#D2DAE8] text-lg py-5 mt-[90px]'>
-            © copyright - K & A Property group- {new Date().getUTCFullYear()}
+            &copy; copyright - T.K.G Realestate - {new Date().getUTCFullYear()}
           </p>
         </div>
       </div>
